@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase of Chukwuebuka Orji</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+ <div id="header">
+    <div class="Container">
+        <nav>
+            <label class="logo"><span>LIQUIDITY FX</span></label>
+            <ul>
+                <li><a href= "#header">Home</a></li>
+                <li><a href= "#about">About</a></li>
+                <li><a href= "#portfolio">Portfolio</a></li>
+                <li><a href= "#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div  class="header-text">
+        <p>Forex Trader</p>
+        <h1>Hi, My name is <br><span>Chukwuebuka </span>Orji </h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class = "container">
+        <div class="row">
+           <div class="about-col-1">
+            <img src="images/IMG_3778.JPG">
+         </div>
+           
+
+           <div class="about-col-2">  
+           <h1 class="sub-title">About Me</h1>
+           <p>
+            Hi! I'm Chukwuebuka Orji, a 19-year-old university student majoring in ISMS.
+             I've been passionate about forex trading since I started university, fascinated by 
+             the complexities of the global currency markets. Balancing my studies and trading, 
+             I've developed strong skills in technical analysis and market strategy.Trading has taught 
+             me discipline and strategic thinking, and I'm excited to grow further in this field.
+             I specialize in the SMC strategy and it has proved to be very profitable.
+           </p>
+         
+           <div class=" tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+            <p class="tab-links"onclick="opentab('Education')">Education</p>
+           </div>
+           <div class="tab-contents active-tab " id="Skills">
+            <ul>
+                <li><span>Mentorship Programme</span><br>Taking students under my wing to learn about the market </li>
+                <li><span>Market Analysis</span><br>Technical and Fundmamental analysis of the market</li>
+                <li><span>SMC Strategy</span><br>Providing Insights of the best working strategy in the market.</li>
+            </ul>
+           </div>
+           <div class="tab-contents" id="Experience">
+            <ul>
+                <li><span>2023- current</span><br>Smart Money Concept Day Trading</li>
+                <li><span>2020-2022</span><br>Breakout Trading Concept</li>
+                <li><span>2019-2021</span><br>Trendline Trading Concept</li>
+            </ul>
+           </div>
+           <div class="tab-contents" id="Education">
+            <ul>
+                <li><span>2024</span><br>Lewis Kelly Istitute of Learning</li>
+                <li><span>2023</span><br>BabyPips Institute of Learning</li>
+                <li><span>2022</span><br>MambaFx Institute of Learning</li>
+            </ul>
+           </div>
+        </div>
+    </div>
+</div>
+<!---------portfolio--------->
+<div id="portfolio">
+    <div class ="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/IMG_3122.PNG" >
+                <div class="layer">
+                    <h3>Forex Mastery</h3>
+                    <p>Teaching you the mastery of the market and its movement.
+                        Apply for Mentorship.</p>
+                    <a href="#" ><i class="fa-solid fa-arrow-up-right-from-square"></i>></a> 
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/IMG_3764.PNG" >
+                <div class="layer">
+                    <h3>Market Analysis</h3>
+                    <p>Head to toe analysis of how I trade and what you need
+                        to know.
+                    </p>
+                    <a href="#" ><i class="fa-solid fa-arrow-up-right-from-square"></i>></a> 
+                </div> 
+            </div>
+                <div class="work">
+                    <img src="images/IMG_3164.PNG" >
+                <div class="layer">
+                    <h3>Proof of Profit</h3>
+                    <p>Some of the profit I have made over time for trading
+                        in the forex market. </p>
+                    <a href="#" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+                </div>
+            </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!----------contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me></h1>
+                <p><i class="fa-solid fa-share"></i>contact@Josemaria.orji@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>07049171657</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="images/My CV.docx" class="btn btn2">Download CV</a>
+              </div>
+                <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                   <button type="submit" class ="btn btn2" >Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Chukwuebuka. Made by LiquidityFx</p>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        } 
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+</body>
+</html>
